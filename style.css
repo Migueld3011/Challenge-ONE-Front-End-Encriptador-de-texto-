@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body { 
+    box-sizing: border-box;
+    background-color: #D8DFE8;
+     
+
+}
+
+.tituloPagina {
+    font-family: "Krona One", sans-serif;
+    color: #0A3871;
+    padding: 1rem; 
+    margin: 0% 10%;
+}
+
+.encriptador {
+    display: flex;
+    padding: 1% 19%;
+    justify-content: space-around;   
+    gap:5%;
+    }
+
+
+.procesoInicial { 
+    display: flex;
+    flex-direction: column;
+    width: 32rem ;
+    height: 75vh;
+    
+}
+
+.contenedorTextarea{
+    width: 90%;
+    height:50%;
+    padding: 5%}
+
+.cuadroIngresoTexto {
+    text-align: justify;
+    width: 90%;
+     height: 100%;
+    font-family: "Krona One", sans-serif;
+    color: #0A3871;
+    font-size: 0.8rem;
+    background-color: #D8DFE8;
+    border: none;
+    outline: none;
+    resize: none;
+    overflow: hidden;
+    
+ }
+
+
+.avisoRestriccion { 
+    display: flex;
+    color: #495057;
+    font-family: "Montserrat", sans-serif;
+    align-items: center;
+    font-size: 0.8rem; 
+    width: 100%;
+    height: 10%; 
+    
+}
+
+.grupoDeBotones {
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    align-items: center ; 
+    width: 90% ;
+    height: 40%;   
+}
+
+.botonEnc-desc {
+    padding: 10px;
+    border-radius: 16px;
+    font-size: 70%;
+    font-family: "Montserrat", sans-serif;
+    color: #0A3871;
+    border: 1px  #0A3871 solid;
+    background-color: #bbcde6 ;
+    font-weight: 600;
+    width: 40%;
+    margin: 0% auto;
+    cursor: pointer;
+} 
+.botonEnc-desc:hover{
+
+    background-color: #0A3871;
+    padding: 3%;
+    color: #bbcde6;
+}
+
+.contenedorResultado{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #FFFFFF;
+    border-radius: 4%;
+    padding: 5%;
+    width: 24rem;
+    height: 80vh;
+    background-color: #FFFFFF;    
+    height: 70vh;
+    
+}
+
+.contenedorImagen{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+   align-items: center;
+    
+
+}
+.imagenBusqueda{
+    background-color: #FFFFFF;
+    border: none;
+    max-width: 80%;
+    height: 70%;
+    margin: 0 auto;
+    
+}
+
+.mensajeDeAviso {
+    font-family: "Krona One", sans-serif; 
+    font-size: 0.7rem;
+    max-width: 100%;
+    text-align: center;
+    height: 9vh;
+    align-content:end;
+}  
+.resultadoDeorden {
+    background-color: #FFFFFF;
+    width: 100%;
+    font-family: "Krona One", sans-serif; 
+    text-align: center; 
+    border: none;
+    outline: none;
+    font-size: 0.7rem;
+    resize:none;
+    height: 30%;
+    overflow: hidden;
+    flex-grow: 1;
+}  
+.contenedorBotonCopiar{
+    gap: 10%;
+  display: flex;
+    width: 100% ;
+    height: 10vh;   
+    align-items: center;
+} 
+
+.botonCopiar {
+    text-align: center;
+    padding: 10px  ;
+    width: 40%;
+    border-radius: 16px;
+    font-size: 0.8rem;
+    font-family: "Montserrat", sans-serif;
+    color: #0A3871;
+    border: 1px  #0A3871 solid;
+    background-color: #bbcde6 ;
+    font-weight: 600;
+    margin: 0% auto;
+    cursor: pointer;
+    
+}  
+
+.botonCopiar:hover{
+
+    background-color: #0A3871;
+    padding: 3%;
+    color: #bbcde6;
+}
+
+.footer{
+   font-family:  "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+    padding:2% ;
+   
+}
+

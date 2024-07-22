@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>encriptador de texto</title>
+  
+</head>
+
+<body>
+    <header class="header">
+
+        <h1 class="tituloPagina"> <span>Encrip-Text</span> </h1>
+    
+    </header>
+    
+    <main class="encriptador">
+        
+        <section class="procesoInicial">
+            
+            <div class="contenedorTextarea">
+                <textarea class="cuadroIngresoTexto"  id="cuadroIngresoTexto"></textarea>
+             </div>
+            <div class="avisoRestriccion">
+                <p>  <img src="exclamacion.png"  alt="signo de exclamacion" width="12" >
+                 letras minúsculas y sin acentos </p>
+            </div>
+        
+            <div class="grupoDeBotones">
+                <button  onclick="encriptaTexto();" class="botonEnc-desc" name="button"> Encriptar </button>
+                <button  onclick="desEncriptaTexto() "  class="botonEnc-desc" name="button"> Desencriptar </button>
+            </div>
+        </section>
+        
+            <div class="contenedorResultado" id="contenedorResultado">
+                
+                <div class="contenedorImagen">
+                    <img class="imagenBusqueda"  src="muneco.png" alt="muñeco de busqueda " id="imagenBusqueda">
+                </div>
+                
+                <div class="contenedorMensajeDeAviso">
+                    <p class="mensajeDeAviso" id="mensajeDeAviso"> <strong>Ningún mensaje fue encontrado</strong></p>
+                </div>
+    
+                <textarea class="resultadoDeorden" id="contenedorDeResultado"  placeholder="Ingresa el texto que desees encriptar o desencriptar."></textarea>     
+                
+                <div class="contenedorBotonCopiar">
+                    <button  onclick="copiarTexto()"  class="botonCopiar" name="button"> Copiar </button>
+                </div>
+            
+            </div>
+    </main>
+
+</body>
+
+    <footer class="footer">
+            <p>Encriptador de texto elaborado por Miguel Daza</p>
+            <p>para el challenge en el curso de programacion de Alura Latam</p>
+
+    </footer>
+    <script src="app.js" ></script>
+</html>
