@@ -12,11 +12,6 @@ cajaEncriptadora.addEventListener('focus', function() {
             this.value = "Ingresa Texto aqui...";
         }
     });
-//function ajustarAlturaTextarea(textarea) {
-           // textarea.style.height = 'auto';
-            //textarea.style.height = (textarea.scrollHeight) + 'px';
-            
-        //}
 
 
 function mostrarResultado() {
@@ -49,15 +44,8 @@ function encriptaTexto() {
            document.getElementById('imagenBusqueda').style.display = 'none';
            document.getElementById('mensajeDeAviso').style.display = 'none';
            document.getElementById('contenedorDeResultado').style.textAlign ="justify";
-           ajustarAlturaTextarea(contenedorDeResultado);
           
-           //revisar esta parte de codigo para lograr que la altura del textarea se ajuste al principio
-         //  contenedorDeResultado.style.flexGrow = '1';
-           //contenedorDeResultado.style.height = '200%';
-           
-           
-           document.getElementById('contenedorDeResultado').style.alignItems= "flex-start";
-           
+         
         }
 
 function desEncriptaTexto()  {
@@ -80,12 +68,6 @@ function desEncriptaTexto()  {
    document.getElementById('imagenBusqueda').style.display = 'none';
    document.getElementById('mensajeDeAviso').style.display = 'none';
    document.getElementById('contenedorDeResultado').style.textAlign ="justify";
-   //ajustarAlturaTextarea(contenedorDeResultado);
-  
-   //revisar esta parte de codigo para lograr que la altura del textarea se ajuste al principio
- //  contenedorDeResultado.style.flexGrow = '1';
-   //contenedorDeResultado.style.height = '200%';
-   
    
    document.getElementById('contenedorDeResultado').style.alignItems= "flex-start";       
 
