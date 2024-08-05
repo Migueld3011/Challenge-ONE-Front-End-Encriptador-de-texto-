@@ -38,7 +38,7 @@ body {
 .contenedorTextarea{
     width: 90%;
     height:50%;
-    padding: 5%}
+   }
 
 .cuadroIngresoTexto {
     text-align: justify;
@@ -52,6 +52,7 @@ body {
     outline: none;
     resize: none;
     overflow: hidden;
+    padding: 3%;
     
  }
 
@@ -141,6 +142,7 @@ body {
 
 .contenedorDeResultado{
     height: 30%;
+  
 } 
 
 
@@ -154,8 +156,8 @@ body {
     font-size: 0.7rem;
     resize:none;
     height:100%;
-    overflow: hidden;
-    flex-grow: 1;
+    padding: 2%;
+  
 }  
 .contenedorBotonCopiar{
     gap: 10%;
