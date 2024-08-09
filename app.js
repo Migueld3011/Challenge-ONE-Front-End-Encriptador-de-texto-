@@ -13,16 +13,20 @@ cajaEncriptadora.addEventListener('focus', function() {
         }
     });
 
+    function validarMinusculas(input) {
+        const regex = /^[a-z\s]*$/;
 
-function mostrarResultado() {
-            document.getElementById('contenedorResultado').style.display = 'flex';
-            document.getElementById('imagenBusqueda').style.display= 'flex'
+        if (!regex.test(input.value)) {
+       
+            document.getElementById('errorMsg').textContent = "solo letras minúsculas y sin acentos.";            
+          
+            input.value = input.value.slice(0, -1);
+        } else {
+            document.getElementById('errorMsg').textContent = "";
         }
+    }
+    
 
-function ocultarResultado() {
-            document.getElementById('contenedorResultado').style.display = 'none';
-             document.getElementById('imagenBusqueda').style.display= 'none'
-        }
 
 function encriptaTexto() {
             let textoIngresado = document.getElementById('cuadroIngresoTexto').value;
@@ -69,16 +73,34 @@ function desEncriptaTexto()  {
    document.getElementById('mensajeDeAviso').style.display = 'none';
    document.getElementById('contenedorDeResultado').style.textAlign ="justify";
    
-   document.getElementById('contenedorDeResultado').style.alignItems= "flex-start";       
-
+   
 
 }
 
+//async function copiarTexto() {
+  //  let contenedorDeResultado = document.getElementById('contenedorDeResultado');
+    //try {
+      //  await navigator.clipboard.writeText(contenedorDeResultado.value);
+        //alert('Texto copiado al portapapeles');
+   // } catch (err) {
+     //   console.error('Error al copiar el texto: ', err);
+    //}
+//}
+
 async function copiarTexto() {
     let contenedorDeResultado = document.getElementById('contenedorDeResultado');
+    let mensajeCopiado = document.getElementById('mensajeCopiado');
+    
     try {
         await navigator.clipboard.writeText(contenedorDeResultado.value);
-        alert('Texto copiado al portapapeles');
+        
+        // Mostrar el mensaje de que el texto fue copiado
+        mensajeCopiado.style.display = 'block';
+
+        // Ocultar el mensaje después de 3 segundos
+        setTimeout(() => {
+            mensajeCopiado.style.display = 'none';
+        }, 1000);
     } catch (err) {
         console.error('Error al copiar el texto: ', err);
     }

@@ -31,14 +31,14 @@ body {
     display: flex;
     flex-direction: column;
     width: 32rem ;
-    height: 75vh;
+    height: 70vh;
     
 }
 
 .contenedorTextarea{
     width: 90%;
     height:50%;
-   }
+    padding: 5%}
 
 .cuadroIngresoTexto {
     text-align: justify;
@@ -52,7 +52,6 @@ body {
     outline: none;
     resize: none;
     overflow: hidden;
-    padding: 3%;
     
  }
 
@@ -68,6 +67,9 @@ body {
     
 }
 
+#errorMsg {
+    font-weight: bold;
+}
 .grupoDeBotones {
     display: flex;
     gap: 10%;
@@ -104,9 +106,8 @@ body {
     border-radius: 4%;
     padding: 5%;
     width: 24rem;
-    height: 80vh;
+    height: 65vh;
     background-color: #FFFFFF;    
-    height: 70vh;
     align-self: center;
     
 }
@@ -124,7 +125,7 @@ body {
     background-color: #FFFFFF;
     border: none;
     max-width: 200px;
-    margin: 0 auto;
+    margin: 20% auto;
     
 }
 .contenedorMensajeDeAviso{
@@ -142,7 +143,6 @@ body {
 
 .contenedorDeResultado{
     height: 30%;
-  
 } 
 
 
@@ -156,8 +156,8 @@ body {
     font-size: 0.7rem;
     resize:none;
     height:100%;
-    padding: 2%;
-  
+    overflow: hidden;
+    flex-grow: 1;
 }  
 .contenedorBotonCopiar{
     gap: 10%;
@@ -244,8 +244,14 @@ body {
         width: 28rem;
         height: auto;
         margin: 3%;
+
    
     } 
+
+    .imagenBusqueda{
+        margin: 5% auto;
+        
+    }
 
     .footer{
          font-size: 0.5rem;
@@ -263,13 +269,16 @@ body {
   
     
     .procesoInicial { 
+       padding: 3%;
         width: 24rem ;
         height: 55vh;
        
         
     }
+     .encriptador { 
+        padding: 2%;
 
-
+}
 
     .grupoDeBotones {
         display: flex;  
@@ -277,10 +286,14 @@ body {
        
     }
     .contenedorResultado{ 
-        margin: 5%;
         width: 24rem;
+        padding: 3%;
         
    
     } 
+    .imagenBusqueda{
+        margin: 0% auto;
+        
+    }
 
 }
