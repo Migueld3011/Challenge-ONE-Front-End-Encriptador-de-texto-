@@ -13,20 +13,35 @@ cajaEncriptadora.addEventListener('focus', function() {
         }
     });
 
-    function validarMinusculas(input) {
-        const regex = /^[a-z\s]*$/;
+    //function validarMinusculas(input) {
+      //  const regex = /^[a-z\s]*$/;
 
-        if (!regex.test(input.value)) {
+        //if (!regex.test(input.value)) {
        
-            document.getElementById('errorMsg').textContent = "solo letras minúsculas y sin acentos.";            
+          //  document.getElementById('errorMsg').textContent = "solo letras minúsculas y sin acentos.";            
           
-            input.value = input.value.slice(0, 1);
+            //input.value = input.value.slice(0, -1);
+        //} else {
+          //  document.getElementById('errorMsg').textContent = "";
+      //  }
+    //}
+    
+    function validarMinusculas(input) {
+        // Convertir el valor del input a minúsculas
+        let valorOriginal = input.value;
+        let valorMinusculas = valorOriginal.toLowerCase();
+    
+        // Si el valor original contenía mayúsculas, mostrar el mensaje de advertencia
+        if (valorOriginal !== valorMinusculas) {
+            document.getElementById('errorMsg').textContent = "Las mayúsculas se convierten automáticamente a minúsculas.";
         } else {
             document.getElementById('errorMsg').textContent = "";
         }
+    
+        // Actualizar el valor del input con la versión en minúsculas
+        input.value = valorMinusculas;
     }
     
-
 
 function encriptaTexto() {
             let textoIngresado = document.getElementById('cuadroIngresoTexto').value;
