@@ -20,7 +20,7 @@ cajaEncriptadora.addEventListener('focus', function() {
        
             document.getElementById('errorMsg').textContent = "solo letras minúsculas y sin acentos.";            
           
-            input.value = input.value.slice(0, -1);
+            input.value = input.value.slice(0, 1);
         } else {
             document.getElementById('errorMsg').textContent = "";
         }
