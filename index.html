@@ -20,14 +20,14 @@
         <section class="procesoInicial">
             
             <div class="contenedorTextarea">
-                <textarea class="cuadroIngresoTexto"  id="cuadroIngresoTexto"  oninput="validarMinusculas(this)"></textarea>
+                <textarea class="cuadroIngresoTexto"  id="cuadroIngresoTexto"  onchange="validarMinusculas(this)"></textarea>
             
              </div>
             <div class="avisoRestriccion" id="errorMsg">
                 <p>  <img src="exclamacion.png"  alt="signo de exclamacion" width="12" >
                  solo letras minúsculas y sin acentos </p>
             </div>
-        
+    
             <div class="grupoDeBotones">
                 <button  onclick="encriptaTexto();" class="botonEnc-desc" name="button"> Encriptar </button>
                 <button  onclick="desEncriptaTexto() "  class="botonEnc-desc" name="button"> Desencriptar </button>
@@ -50,7 +50,7 @@
                 <div class="contenedorBotonCopiar">
                     <button  onclick="copiarTexto()"  class="botonCopiar" name="button"> Copiar </button>
                 </div>
-                <div id="mensajeCopiado" style="display:none; color:green; font-weight:bold;">Texto copiado al portapapeles</div>
+                <div id="mensajeCopiado" class="mensajeCopiado">Texto copiado al portapapeles</div>
             </div>
     </main>
 
