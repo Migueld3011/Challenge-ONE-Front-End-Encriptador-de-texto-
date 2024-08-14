@@ -3,7 +3,7 @@
 
 ## Descripción
 
-**Encrip-Text** es un proyecto desarrollado como parte de un challenge de programación, diseñado para encriptar y desencriptar mensajes de texto utilizando HTML, CSS y JavaScript. Este proyecto prioriza la simplicidad y eficiencia, presentando una interfaz fácil de usar con funciones esenciales para la transformación segura de texto.
+**Encrip-Text** es un proyecto desarrollado como parte del curso de lógica de programación realizado con Alura Latam: cuya finalidad es realizar el Challenge Encriptador de texto , diseñado para encriptar y desencriptar mensajes de texto utilizando HTML, CSS y JavaScript. Este proyecto prioriza la simplicidad y eficiencia, presentando una interfaz fácil de usar con funciones esenciales para la transformación segura de texto.
 
 ## Características
 
