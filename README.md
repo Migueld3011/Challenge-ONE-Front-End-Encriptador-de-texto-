@@ -52,8 +52,4 @@ Si te interesa contribuir, puedes hacer un fork del repositorio y enviar pull re
 
 ## Contacto
 
-Para consultas o sugerencias, contáctame a través de [tu correo electrónico] o abre un issue en el repositorio.
-
----
-
-Esta versión incluye todos los elementos necesarios, con instrucciones claras sobre cómo ejecutar el proyecto.
+Para consultas o sugerencias, contáctame a través de [migueld0810@gmail.com] o abre un issue en el repositorio.
