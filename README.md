@@ -24,14 +24,10 @@
 1. Clona este repositorio en tu máquina local:
 
    ```bash
-   git clone https://github.com/tuusuario/encrip-text.git
+   git clone https://github.com/Migueld3011/Challenge-ONE-Front-End-Encriptador-de-texto-.git
    ```
 
-2. Navega al directorio del proyecto:
-
-   ```bash
-   cd encrip-text
-   ```
+2. Navega al directorio del proyecto
 
 3. Abre el archivo `index.html` en tu navegador preferido para ver y utilizar la aplicación.
 
@@ -56,8 +52,4 @@ Si te interesa contribuir, puedes hacer un fork del repositorio y enviar pull re
 
 ## Contacto
 
-Para consultas o sugerencias, contáctame a través de [tu correo electrónico] o abre un issue en el repositorio.
-
----
-
-Esta versión incluye todos los elementos necesarios, con instrucciones claras sobre cómo ejecutar el proyecto.
+Para consultas o sugerencias, contáctame a través de [migueld0810@gmail.com] o abre un issue en el repositorio.
