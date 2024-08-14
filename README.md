@@ -10,7 +10,7 @@
 - **Encriptación y Desencriptación:** Convierte texto a un formato encriptado y recupera el mensaje original con facilidad.
 - **Copiar al portapapeles:** Copia rápidamente el texto transformado con un solo clic.
 
-- ![Vista previa de Encrip-Text](assets/proyecto.png)
+![Vista previa de Encrip-Text](assets/proyecto.png)
 
 
 ## Tecnologías Utilizadas
